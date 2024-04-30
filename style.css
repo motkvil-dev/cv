@@ -8,7 +8,7 @@
  font-optical-sizing: auto;
  font-weight: 500;
  font-style: normal;
- 
+ box-sizing: border-box;
 }
 
 
@@ -87,8 +87,8 @@ h6 {
 
 
 img {
- max-width: 300px; /* Ajusta la imagen al ancho máximo del contenedor */
- height: 300px; /* Mantiene la proporción original de la imagen */
+ max-width: 300px; 
+ height: 300px; 
  border-bottom-left-radius: 50%;
  border-bottom-right-radius: 50%;
 }
@@ -159,7 +159,7 @@ span {
 
 .skillBar {
  background-color: var(--bgIconColor);
- height: 10px; width: 100%; max-width: 200px;
+ height: 15px; width: 100%; max-width: 200px;
  padding: 3px;
  display: flex;
  align-items: center;
@@ -232,7 +232,8 @@ footer {
 }
 
 .contactme {
- animation: alternate vibration .3s ease-in-out infinite;
+ animation: alternate vibration .1s ease-in-out infinite;
+ cursor: pointer;
 }
 
 
@@ -321,10 +322,10 @@ footer {
 
 @keyframes vibration {
  from {
-  transform: rotateZ(2deg);
+  transform: rotateZ(1deg);
  }
  to{
-  transform: rotateZ(-2deg);
+  transform: rotateZ(-1deg);
  }
 }
 
